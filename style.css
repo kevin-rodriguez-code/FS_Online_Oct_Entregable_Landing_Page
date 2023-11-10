@@ -1,20 +1,19 @@
 header{
     display: flex;
+    justify-content: space-around;
     height: 150px;
-    justify-content: space-between;
+    font-family:sans-serif;
  
 }
 h1{
     display: flex;
-    width: 250px;
-    font-family: Calibri;
+    width: 200px;
     font-size: 20px ;
     justify-content: center;
-    gap:5px;
     align-items: center;
 }
 .planet {
-    color:rgb(14, 146, 118) ;
+   color: rgba(0, 157, 149, 1);
 }
 .skin{
     color: pink;
@@ -23,15 +22,37 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 800px;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgba(0, 157, 149, 1) ;
+    font-size: 18px ;
+    font-weight: 400 ;
+    font-style: normal;
+    line-height: 20px;
 }
 .lista2{
-    justify-content:space-around ;
-    gap:20px;
+    display: flex;
+    justify-content:space-around;
+    list-style: none;
+    color: rgba(0, 157, 149, 1) ;
+    font-size: 18px ;
+    font-weight: 400 ;
+    font-style: normal;
+    line-height: 20px;
 }
 .lista3{
-    width:250px;
-    justify-content: end;
-    align-items: center;
+    display: flex;
+    justify-self:center;
+    width:200px;
+    align-items:center;
+    list-style: none;
+    padding-left: 0;
     gap:30px;
 }
 .perfil{
@@ -47,10 +68,9 @@ nav{
     width: 20px;
     height: 20px;
 }
-
-.menu {
-    display: flex;
-    flex-direction: row;
+.oculto{
+    display: none;
+    width: 100px;
 }
 .dropdown {
     display: block;
@@ -61,7 +81,7 @@ nav{
     flex-direction: row;
     background-color: white;
     color: rgb(14, 146, 118);
-    padding: 10px;
+    gap:20px;
     border: none;
     cursor: pointer;
 }
@@ -71,15 +91,18 @@ nav{
     z-index: 1;
     min-width: 150px;
     list-style: none;
-    background-color: white;
+    background-color: rgb(229, 233, 233);
     margin: 0;
-    padding: 0;
+    gap: 10px;
+    font-size: 13px;
 }
 .dropdown-content a {
     display: block;
-    padding-top: 10px;
     text-decoration: none;
     color:black;
+    font-size: 13px;
+    height:27px;
+    justify-content: center;
 }
   
 .dropbtn:hover + .dropdown-content, 
@@ -87,15 +110,78 @@ nav{
     display: block;
    
 }
+.dropdown-content a:hover{
+    background-color: azure;
+}
 section{
     position: relative;
     overflow: hidden;
 }
 .imagen-fondo{
+    position: relative;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-@media(min-width:480px){
-
+.btnymens{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 2;
+    bottom: 50px;
+    width: 100%;
+    object-fit: cover;
+}
+.boton-club{
+    display: flex;
+    justify-content: center;
+    flex-direction:row-reverse;
+    width: 200px;
+    height: 50px;
+    background-color: pink;
+    border-radius: 30px;
+    color: white;
+}
+.boton-club:hover{
+    cursor: pointer;
+}
+.icono-regalo{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top:15px;
+}
+.container-mensaje{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height:50px;
+    background-color: pink;
+}
+.container-mensaje:hover{
+    cursor:pointer;
+}
+.mensaje{
+   width: 30px;
+   height:30px;
+}
+@media(max-width:480px){
+    .dropbtn{
+        color: blue;
+    }
+}
+@media(max-width:768px){
+    header{
+        justify-content: space-between;
+    }
+    .oculto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu,.lista2{
+        display: none;
+    }
 }
