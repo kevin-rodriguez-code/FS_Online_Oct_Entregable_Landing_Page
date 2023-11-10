@@ -3,33 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Sprint3-Challenge1</title>
 </head>
 <header>
-    <h1>PLANET SKIN</h1>
+    <h1><div class="planet">PLANET</div><div class="skin">SKIN</div></h1>
     <nav>
-        <ul>
-            <li><a>Cuidado facial</a></li>
-            <li><a>Tipo de piel</a></li>
-            <li><a>Te preocupa</a></li>
-            <li><a>Cuidados corporales</a></li>
-            <li><a>Maquillaje</a></li>
-        </ul>
-        <ul>
+        <ul class="menu">
+            <li class="dropdown">
+              <button class="dropbtn">Cuidado facial</button>
+              <ul class="dropdown-content">
+                <li><a href="#">Limpiadores faciales</a></li>
+                <li><a href="#">Cremas</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <button class="dropbtn">Tipo de piel</button>
+              <ul class="dropdown-content">
+                <li><a href="#">Seca</a></li>
+                <li><a href="#">Normal</a></li>
+                <li><a href="#">Grasa</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <button class="dropbtn">Te preocupa</button>
+              <ul class="dropdown-content">
+                <li><a href="#">Manchas</a></li>
+                <li><a href="#">Hidratación</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <button class="dropbtn">Cuidados corporales</button>
+              <ul class="dropdown-content">
+                <li><a href="#">Loción corporal</a></li>
+                <li><a href="#">Crema de manos</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <button class="dropbtn">Maquillaje</button>
+              <ul class="dropdown-content">
+                <li><a href="#">Ojos</a></li>
+                <li><a href="#">Labios</a></li>
+              </ul>
+            </li>
+          </ul>
+        <ul class="lista2">
             <li><a>Oulet y promociones</a></li>
             <li><a>Novedades</a></li>
             <li><a>Marcas</a></li>
         </ul>
     </nav>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+    <ul class="lista3">
+        <li><a><img class="perfil" src="https://static.vecteezy.com/system/resources/thumbnails/005/544/718/small/profile-icon-design-free-vector.jpg"></a></li>
+        <li><a><img class="lupa" src="https://cdn-icons-png.flaticon.com/512/25/25313.png"></a></li>
+        <li><a><img class="compra" src="https://cdn-icons-png.flaticon.com/512/4903/4903482.png"></a></li>
     </ul>
 </header>
 <body>
     <section>
-        <img src="https://planet-skin.com/cdn/shop/files/1_10_1000x.jpg?v=1698236253" alt="Protector solar de Planet Skin, factor 50+">
+        <img class="imagen-fondo" src=file:///C:/Users/Usuario/Downloads/planet%20skin.webp alt="Protector solar de Planet Skin, factor 50+">
     </section>
     
 </body>

@@ -1,0 +1,101 @@
+header{
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+ 
+}
+h1{
+    display: flex;
+    width: 250px;
+    font-family: Calibri;
+    font-size: 20px ;
+    justify-content: center;
+    gap:5px;
+    align-items: center;
+}
+.planet {
+    color:rgb(14, 146, 118) ;
+}
+.skin{
+    color: pink;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.lista2{
+    justify-content:space-around ;
+    gap:20px;
+}
+.lista3{
+    width:250px;
+    justify-content: end;
+    align-items: center;
+    gap:30px;
+}
+.perfil{
+    width: 20px;
+    height: 20px;
+}
+.lupa{
+    width: 15px;
+    height: 15px;
+   
+}
+.compra{
+    width: 20px;
+    height: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+.dropdown {
+    display: block;
+    flex-direction: row;
+}
+.dropbtn {
+    display: block;
+    flex-direction: row;
+    background-color: white;
+    color: rgb(14, 146, 118);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    min-width: 150px;
+    list-style: none;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+.dropdown-content a {
+    display: block;
+    padding-top: 10px;
+    text-decoration: none;
+    color:black;
+}
+  
+.dropbtn:hover + .dropdown-content, 
+.dropdown-content:hover{
+    display: block;
+   
+}
+section{
+    position: relative;
+    overflow: hidden;
+}
+.imagen-fondo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media(min-width:480px){
+
+}
